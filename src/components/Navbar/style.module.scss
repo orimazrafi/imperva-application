@@ -1,0 +1,6 @@
+.navbar_input {
+    &::placeholder {
+        color: black;
+        background-image: image();
+    }
+}

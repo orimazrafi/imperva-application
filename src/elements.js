@@ -6,10 +6,9 @@ export const SideBorderElement = styled.div`
     align-self:center;
     margin:0 20px 0 25px;
   ${props =>
-        props.primary &&
+        props.margin &&
         css`
-      background: palevioletred;
-      color: white;
+      margin: ${props.margin};
     `};
 `
 export const SvgIconElement = styled.svg`
@@ -20,8 +19,12 @@ ${props => props.position &&
 position:${props.position};
 top:${props.top};
 left:${props.left};
-`
+        `
     }
-
+${props => props.height &&
+        css`
+height:${props.height};
+        `
+    }
 
 `

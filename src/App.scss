@@ -1,0 +1,16 @@
+.MuiTabs-root {
+  margin-top: 12px;
+
+
+  .MuiButtonBase-root {
+    color: white;
+  }
+
+  .MuiTab-textColorPrimary.Mui-selected {
+    color: white;
+    font-weight: 700;
+    letter-spacing: 0.4;
+    border-bottom: 3px solid;
+    z-index: 1;
+  }
+}

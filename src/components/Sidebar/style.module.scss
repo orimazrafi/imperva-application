@@ -1,0 +1,30 @@
+.sidebar_wrapper {
+    background: lightgray;
+    height: calc(100vh - 60px);
+    width: 15%;
+    display: flex;
+
+    .beta_btn {
+        border: 1px solid blue;
+        color: blue;
+        font-size: 12px;
+        height: 16px;
+        margin: 3px 10px 0 0;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    // .btn_new{
+    //     margin:auto;
+    //     background: blue;
+    //     padding: 0 2px;
+    //     border-radius: 3px;
+    //     color:white;
+    //     font-weight: bold;
+    //     &:hover{
+    //         cursor: pointer;
+    //     }
+    // }
+}

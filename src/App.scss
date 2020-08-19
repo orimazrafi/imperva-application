@@ -1,3 +1,7 @@
+:root {
+  box-sizing: border-box;
+}
+
 .MuiTabs-root {
   margin-top: 12px;
 
@@ -12,5 +16,34 @@
     letter-spacing: 0.4;
     border-bottom: 3px solid;
     z-index: 1;
+  }
+}
+
+.sidebar-accordion {
+
+  .MuiPaper-root {
+
+    background: lightgray;
+
+  }
+
+  .btn_new {
+    margin: auto;
+    background: blue;
+    padding: 0 2px;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.sidebar-accordion {
+
+  .Mui-expanded {
+    background: #a19e9e;
   }
 }

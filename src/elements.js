@@ -13,8 +13,7 @@ export const SideBorderElement = styled.div`
 `
 export const SvgIconElement = styled.svg`
 height:15px;
-fill: white;
-${props => props.fill && css`fill:${props.fill}`}
+  fill: ${props => props.fill ? props.fill : `white`};
 ${props => props.position &&
         css`
 position:${props.position};
@@ -31,6 +30,7 @@ height:${props.height};
 export const MutedTextElement = styled.div`
 color:gray;
 font-weight:500;
+font-size:${props => props.headerFontSize && props.headerFontSize};
 ${props => props.uppercase && css`
 text-transform:uppercase;
 `}

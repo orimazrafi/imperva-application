@@ -8,13 +8,14 @@ export const TwoRowsAndIcon = (props) => {
                 {props.headline}
             </MutedText>
             <SvgIcon
+
+                {...props}
                 position="relative"
-                top="12px"
                 left={props.left}
                 pathname={props.pathname}
             />
         </div>
-        <div>
+        <div style={{ fontSize: props.strongLowerText && "20px", fontWeight: props.strongLowerText && "bold" }}>
             {props.lowerText}
         </div>
     </div>

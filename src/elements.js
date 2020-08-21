@@ -38,3 +38,12 @@ ${props => props.margin && css`
 margin:${props.margin};
 `}
 `
+export const Conatiner = styled.div`
+display:flex;
+flex-grow:1;
+gap:${props => props.gap};
+margin:${props => props.margin};
+${props => props.spaceBetween && css`
+justify-content:space-between;
+`}
+`
